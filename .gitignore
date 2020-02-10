@@ -1,0 +1,7 @@
+# ignore logs
+*.log
+# misc
+*.DS_Store
+*.idea
+# dependencies
+node_modules/

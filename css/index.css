@@ -1,0 +1,58 @@
+/*
+* Author: Carla Martínez Poveda
+* 2020
+*
+* */
+.content-heading {
+    padding-top: 48px;
+}
+.subtitle {
+    padding-bottom: 61px;
+}
+.pills-main {
+    height: 125px;
+    padding-bottom: 23px;
+}
+.grey-back {
+    background-color: #f7f8f9;
+}
+.high_proj {
+    height: 15%;
+}
+.container-padding-text {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+    .container-small {
+        width: 300px;
+    }
+    .container-large {
+        width: 970px;
+    }
+}
+@media (min-width: 992px) {
+    .container-small {
+        width: 500px;
+    }
+    .container-large {
+        width: 1170px;
+    }
+}
+@media (min-width: 1200px) {
+    .container-small {
+        width: 700px;
+    }
+    .container-large {
+        width: 1500px;
+    }
+}
+.container-small, .container-large {
+    max-width: 100%;
+}
+html,body{
+    height: 100%
+}
+.projects-font {
+    font-size: 1.5em;
+}
