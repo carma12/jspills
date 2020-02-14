@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap / CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/landing.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="screen"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_main/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_main/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_main/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon_main/site.webmanifest">
+
+    <title>Landing page</title>
+</head>
+<body id="home">
+    <!-- header -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg px-4" id="upper-nav">
+            <!-- main icon -->
+            <a class="navbar-brand" href="#">
+                <img class="icon-calcifer-img" src="https://media.giphy.com/media/eHjrC6X9zDIMI0alnP/giphy.gif" alt="">
+            </a>
+            <!-- nav options -->
+            <div class="collapse navbar-collapse" id="main-bar">
+                <ul class="navbar-nav mx-auto text-capitalize monserrat-font nav-text">
+                    <li class="nav-item options-nav-item active">
+                        <a class="nav-link a-navbar" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item options-nav-item">
+                        <a class="nav-link a-navbar" href="#api">Ghibli</a>
+                    </li>
+                    <li class="nav-item options-nav-item">
+                        <a class="nav-link a-navbar" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- nav info -->
+            <div class="nav-info-items d-none d-lg-flex">
+                <!-- switch box -->
+                <div class="theme-switch-wrapper pos-wrapper-switch">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                    <em class="text-switch monserrat-font">Enable Dark Mode!</em>
+                </div>
+            </div>
+        </nav>
+        <!-- subheader -->
+        <div class="container-fluid">
+            <div class="row max-height justify-content-center align-items-center">
+                <div class="col-10 mx-auto banner text-center title-text-up">
+                    <h1 class="text-capitalize monserrat-font">Welcome to the <strong class="banner-title monserrat-font">world of Ghibli</strong></h1>
+                    <a class="btn banner-link text-uppercase my-2" href="#">Explore</a>
+                </div>
+            </div> <!-- row max-height justify-content-center align-items-center -->
+        </div> <!-- container-fluid -->
+        <!-- end of subheader -->
+    </header>
+    <!-- end of header -->
+    <!-- about section -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="row">
+                <!-- about > left block -->
+                <div class="col-10 mx-auto col-md-6 my-5">
+                    <h1 class="text-capitalize monserrat-font" id="about-text">About <strong class="banner-title monserrat-font">this project</strong></h1>
+                    <p class="my-4 w-75" id="about-subtext"> <!-- text-muted -->
+                        This is a landing page that shows information about Studio Ghibli films and many of its elements. Taking as reference this <a href="https://jsbeginners.com/filter-project/">filter options beginner project</a>, the <a href="https://ghibliapi.herokuapp.com/">Ghibli API</a> and this <a href="https://github.com/taniarascia/sandbox/tree/master/ghibli">wonderful Javascript API</a>. This was made as a process to learn Javascript and some aspects such as retrieving information from API, switch light / dark mode and how to display the elements in a nice and visual way.
+                    </p>
+                </div>
+                <!-- about > right block -->
+                <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+                    <img class="kodama-img img-fluid" src="https://media.giphy.com/media/J341iqpI1Xrb4zee4O/giphy.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about section -->
+    <!-- API -->
+    <section id="api" class="api py-5">
+        <div class="container">
+            <!-- title -->
+            <div class="row">
+                <div class="col-10 mx-auto col-sm-6 text-center">
+                    <h1 class="text-capitalize monserrat-font" id="api-h1">Explore</h1>
+                </div>
+            </div>
+            <!-- selection buttons -->
+            <div class="row">
+                <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+                    <button id="btn-films" class="explore-btn btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" onclick="callApi('films')">Films</button>
+                    <button id="btn-people" class="explore-btn btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" onclick="callApi('people')">People</button>
+                    <button id="btn-locations" class="explore-btn btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" onclick="callApi('locations')">Locations</button>
+                    <button id="btn-species" class="explore-btn btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" onclick="callApi('species')">Species</button>
+                    <button id="btn-vehicles" class="explore-btn btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" onclick="callApi('vehicles')">Vehicles</button>
+                </div>
+            </div>
+            <!-- GHIBLI elements -->
+            <div class="row" id="ghibli-items"></div>
+        </div>
+    </section>
+    <!-- end of API -->
+    <!-- footer -->
+    <footer id="footer" class="page-footer font-small pt-4 fixed-right">
+        <div class="footer-copyright text-center py-3">
+            Made with <i class="fa fa-heart fa_custom"></i> - Carla Martínez Poveda <a href="https://github.com/carma12" class="icon" target="_blank" title="github"><i class="fa fa-github"></i> </a>
+        </div>
+    </footer>
+
+    <!-- JS files -->
+    <script type="text/javascript" src="../js/landing.js"></script>
+    <!-- jQuery -->
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+</body>
+</html>

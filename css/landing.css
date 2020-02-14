@@ -1,0 +1,212 @@
+
+/* GENERAL */
+:root {
+    --greyTrans: rgba(96, 102, 101, 0.24);
+    --orangeTrans: rgba(255, 187, 0, 0.32);
+    --orangeBright: rgba(191, 142, 0, 0.85);
+    --clementine: rgba(197, 110, 49, 0.85);
+    --headingColor: rgba(33, 37, 41, 0.85);
+    --white: #fff;
+    --darkMarine: #161625;
+
+    --body-background-color: var(--white);
+    --body-color: var(--darkMarine);
+    --nav-link-color: #3f3f3f;
+    --color-em: var(--darkMarine);
+    --gradient-1: var(--orangeTrans);
+    --gradient-2: var(--greyTrans);
+    --about-text-color: var(--darkMarine);
+    --about-subtext-color: #6c757d;
+    --api-background-color: #eef0f1;
+    --api-h1-color: var(--body-color);
+    --explore-btn-color: #6c757d;
+    --explore-btn-border-color: #6c757d;
+    --footer-text-color: var(--body-color);
+    --card-title-background-color: var(--orangeTrans);
+    --card-title-color: #636c74;
+    --slider-background-color: var(--orangeTrans);
+    --a-navbar-background-color: var(--orangeTrans);
+}
+
+/**/
+body {
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+}
+.a-navbar {
+    color: var(--nav-link-color);
+    background-color: var(--a-navbar-background-color);
+    font-size: larger;
+}
+.nav-link {
+    color: var(--nav-link-color);
+    border-radius: 20px;
+}
+
+
+/* DARK THEME */
+[data-theme="dark"] {
+    --body-background-color: var(--darkMarine);
+    --nav-link-color: var(--white);
+    --color-em: var(--white);
+    --gradient-1: rgba(117, 48, 19, 0.6);
+    --gradient-2: rgba(11, 22, 25, 0.5);
+    --about-text-color: var(--white);
+    --about-subtext-color: #e1dde1;
+    --api-background-color: var(--darkMarine);
+    --api-h1-color: var(--white);
+    --explore-btn-color: #e1dde1;
+    --explore-btn-border-color: #e1dde1;
+    --footer-text-color: var(--white);
+    --card-title-background-color: rgba(117, 48, 19, 0.6);
+    --card-title-color: var(--white);
+    --slider-background-color: rgba(175, 138, 126, 1);
+    --a-navbar-background-color: rgba(175, 138, 126, 1);
+}
+/**/
+.icon-calcifer-img {
+    height: 100px;
+}
+.kodama-img {
+    height: 200px;
+}
+.max-height {
+    min-height: calc(100vh - 76px);
+    background: linear-gradient(var(--gradient-1), var(--gradient-2)),
+    url("../images/japan-temple.jpg") center/cover fixed no-repeat;
+    position: relative;
+}
+.monserrat-font {
+    font-family: 'Montserrat', sans-serif;
+}
+.title-text-up {
+    margin-bottom: 277px;
+}
+.nav-text {
+    font-size: larger;
+    color: var(--orangeTrans);
+    transition: all 0.5s ease-in-out;
+}
+#upper-nav {
+    color: var(--white);
+}
+#about-text {
+    color: var(--about-text-color);
+}
+#about-subtext {
+    color: var(--about-subtext-color);
+}
+#api-h1 {
+    color: var(--api-h1-color);
+}
+.explore-btn {
+    color: var(--explore-btn-color);
+    border-color: var(--explore-btn-border-color);
+}
+.footer-copyright {
+    color: var(--footer-text-color);
+}
+.pos-icon {
+    display: inline-flex;
+}
+.fa-phone {
+    padding: 4px;
+}
+.pos-wrapper-switch {
+    padding-bottom: 10px;
+}
+.text-switch {
+    padding-bottom: 8px;
+}
+.api {
+    background: var(--api-background-color);
+}
+
+.options-nav-item {
+    padding: 0 5px 0 5px;
+}
+
+/* TOGGLE SWITCH */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+em {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: var(--color-em);
+}
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+.theme-switch input {
+    display:none;
+}
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+input:checked + .slider {
+    background-color: var(--slider-background-color);
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* CARD */
+.card {
+    margin: 14px;
+    border: 1px solid gray;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
+.card-title {
+    padding: 17px 0 13px 0;
+    text-align: center;
+    background-color: var(--card-title-background-color);
+    color: var(--card-title-color);
+}
+.card-content {
+    word-break: break-word;
+    padding: 0 35px 0 35px;
+}
+
+
+
+
+
