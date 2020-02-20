@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap / CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/piano.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="screen"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_main/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_main/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_main/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon_main/site.webmanifest">
+
+    <title>JS Pills - Piano</title>
+</head>
+<body>
+    <div class="container">
+        <!-- black keys (sustained) -->
+        <div class="keys black-keys">
+            <div data-key="87" class="key sustained">
+                <kbd>W</kbd>
+                <span class="sound">B#b</span>
+            </div>
+            <div data-key="69" class="key sustained">
+                <kbd>E</kbd>
+                <span class="sound">C#</span>
+            </div>
+            <div data-key="82" class="key sustained">
+                <kbd>R</kbd>
+                <span class="sound">E#b</span>
+            </div>
+            <div data-key="84" class="key sustained">
+                <kbd>T</kbd>
+                <span class="sound">F#</span>
+            </div>
+            <div data-key="89" class="key sustained">
+                <kbd>Y</kbd>
+                <span class="sound">G#</span>
+            </div>
+        </div>
+        <!-- white keys (normal) -->
+        <div class="keys white-keys">
+            <div data-key="65" class="key main">
+                <kbd>A</kbd>
+                <span class="sound">A</span>
+            </div>
+            <div data-key="83" class="key main">
+                <kbd>S</kbd>
+                <span class="sound">B</span>
+            </div>
+            <div data-key="68" class="key main">
+                <kbd>D</kbd>
+                <span class="sound">C</span>
+            </div>
+            <div data-key="70" class="key main">
+                <kbd>F</kbd>
+                <span class="sound">D</span>
+            </div>
+            <div data-key="71" class="key main">
+                <kbd>G</kbd>
+                <span class="sound">E</span>
+            </div>
+            <div data-key="72" class="key main">
+                <kbd>H</kbd>
+                <span class="sound">F</span>
+            </div>
+            <div data-key="74" class="key main">
+                <kbd>J</kbd>
+                <span class="sound">G</span>
+            </div>
+        </div>
+        <div class="under-keys">
+            <div data-key="32" class="space">
+                <kbd>Mute</kbd>
+                <span class="sound"></span>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer" class="page-footer font-small pt-4 fixed-bottom">
+        <div class="footer-copyright text-center py-3">
+            Made with <i class="fa fa-heart fa_custom"></i> - Carla Martínez Poveda <a href="https://github.com/carma12" class="icon" target="_blank" title="github"><i class="fa fa-github"></i> </a>
+        </div>
+    </footer>
+
+    <!-- audios -->
+    <audio data-key="65" src="../sounds/68437__pinkyfinger__piano-a.wav"></audio>
+    <audio data-key="83" src="../sounds/68438__pinkyfinger__piano-b.wav"></audio>
+    <audio data-key="87" src="../sounds/68439__pinkyfinger__piano-bb.wav"></audio>
+    <audio data-key="68" src="../sounds/68440__pinkyfinger__piano-c.wav"></audio>
+    <audio data-key="69" src="../sounds/68441__pinkyfinger__piano-c.wav"></audio>
+    <audio data-key="70" src="../sounds/68442__pinkyfinger__piano-d.wav"></audio>
+    <audio data-key="71" src="../sounds/68443__pinkyfinger__piano-e.wav"></audio>
+    <audio data-key="82" src="../sounds/68444__pinkyfinger__piano-eb.wav"></audio>
+    <audio data-key="72" src="../sounds/68445__pinkyfinger__piano-f.wav"></audio>
+    <audio data-key="84" src="../sounds/68446__pinkyfinger__piano-f.wav"></audio>
+    <audio data-key="74" src="../sounds/68447__pinkyfinger__piano-g.wav"></audio>
+    <audio data-key="89" src="../sounds/68448__pinkyfinger__piano-g.wav"></audio>
+    <audio data-key="32" src=""></audio>
+
+
+    <!-- JS files -->
+    <script type="text/javascript" src="../js/piano.js"></script>
+
+</body>
+</html>
