@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #7c977d;
+    color: white;
+    padding: 1.6rem 0;
+}
+
+.header-subtitle {
+    font-family: 'Patrick Hand', cursive;
+}
+
+.header-title {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 6rem;
+    margin-bottom: .4rem;
+}
+
+.header-subtitle {
+    font-size: 2.2rem;
+    margin-bottom: .4rem;
+}
+
+.header-container {
+    text-align: center;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.options {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #dedfe0;
+    padding: .8rem
+}
+
+.options-container {
+    align-items: center;
+    display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+#search-text {
+    margin: 0 12px 0 0;
+    width: 270px;
+}
+
+.options-edit-container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.note-title {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+/* info text */
+.paragraph {
+    text-align: center;
+    padding-top: 33px;
+    font-size: xx-large;
+}
+
+/* Note */
+.note-edit-container {
+
+    padding: 25px 0 0 0;
+    display: grid;
+    justify-content: center;
+}
+
+.list-item {
+    text-decoration: none;
+    color: #333333;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    display: block;
+    transition: background .3s ease;
+    position: relative; /**/
+}
+
+.list-note-title {
+    color: #4d7732;
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-note-body {
+    font-size: 1.2rem;
+    margin-left: 12px;
+}
+
+.list-note-subtitle {
+    color: #666;
+    font-size: .8rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#create-note {
+    margin-left: 12px;
+    background-color: #7c977d;
+}
+
+#clear-all-notes {
+    margin-left: 12px;
+}
+
+.empty-message {
+    margin: 20px;
+}
+
+.list-note-delete-btn {
+    position: absolute; /**/
+    bottom: 14px;
+    left: 822px;
+}
+
+.about-project {
+    margin: 13px;
+}
+
+#about-link {
+    color: darkcyan;
+}

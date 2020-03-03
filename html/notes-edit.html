@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A notes application to writing notes and setting a remainder timer">
+    <meta name="keywords" content="notes, application, jspills, javascript, html, css, carma12">
+    <meta http-equiv="author" content="carma12">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap / CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/notes.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="screen"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_main/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_main/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_main/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon_main/site.webmanifest">
+
+    <title>Edit Note</title>
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+    <div class="header-container">
+        <h1 class="header-title">Notes JS</h1>
+        <h2 class="header-subtitle">Because memory is unreliable</h2>
+    </div>
+</div>
+
+    <!-- options -->
+    <div class="options">
+        <div class="options-edit-container">
+            <a href="./notes.html">Home</a><span id="time-span"></span>
+        </div>
+    </div>
+    <!-- info text -->
+    <p class="paragraph">Write note:</p>
+    <!-- Note -->
+    <div id="note" class="container note-edit-container">
+        <input type="text" id="note-title" class="input-title" placeholder="Note title">
+        <textarea name="" id="note-body" class="body-input" cols="50" rows="10" placeholder="Enter note"></textarea>
+        <button id="btn-save-note" class="btn btn-info" onclick="saveNote()">Save</button>
+        <button id="btn-delete-note" class="btn btn-danger">Delete</button>
+        <button id="btn-back" class="btn btn-secondary" onclick="window.location.href = './notes.html';">Back</button>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" class="page-footer font-small pt-4 fixed-bottom">
+        <div class="footer-copyright text-center py-3">
+            Made with <i class="fa fa-heart fa_custom"></i> - Carla Martínez Poveda <a href="https://github.com/carma12" class="icon" target="_blank" title="github"><i class="fa fa-github"></i> </a>
+        </div>
+    </footer>
+
+    <!-- JS files -->
+    <script type="text/javascript" src="../js/notes-functions.js"></script>
+    <script type="text/javascript" src="../js/notes-edit.js"></script>
+
+</body>
+</html>
