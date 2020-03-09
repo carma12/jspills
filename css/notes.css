@@ -4,12 +4,87 @@
     padding: 0;
 }
 
-.header {
-    background: #7c977d;
-    color: white;
-    padding: 1.6rem 0;
+/* Mobile */
+@media screen and (max-width: 480px) {
+    /* notes.html */
+    .header {
+        width: 100%;
+    }
+    .options {
+        background-color: #F7F7F7;
+        border-bottom: 1px solid #dedfe0;
+        padding: .8rem
+    }
+    #search-text {
+        margin: 0 0 17px 0;
+        width: 100%;
+    }
+    #option-filter {
+        margin-bottom: 25px;
+    }
+    .about-project {
+        display: inline-block;
+    }
+    .list-note-delete-btn {
+        position: relative;
+        bottom: 8px;
+        margin-top: 12px;
+    }
+    .buttons-container {
+        margin-bottom: 12px;
+    }
+    .list-item {
+        text-decoration: none;
+        color: #333333;
+        background: #F7F7F7;
+        border: 1px solid #dedfe0;
+        margin: 1.6rem 0;
+        display: block;
+        transition: background .3s ease;
+        position: relative;
+        padding: .2rem 1rem .2rem 1rem;
+    }
 }
 
+/* Tablets and Desktops*/
+@media screen and (min-width: 768px) {
+    .options {
+        display: flex;
+        justify-content: center;
+        background-color: #F7F7F7;
+        border-bottom: 1px solid #dedfe0;
+        padding: .8rem
+    }
+
+    .options-container {
+        align-items: center;
+        display: flex;
+        max-width: 60rem;
+        min-height: 3rem;
+        padding: 0 1.6rem;
+    }
+    .list-item {
+        text-decoration: none;
+        color: #333333;
+        background: #F7F7F7;
+        border: 1px solid #dedfe0;
+        margin: 1.6rem 0;
+        padding: 1.6rem;
+        display: block;
+        transition: background .3s ease;
+        position: relative;
+    }
+    .list-note-delete-btn {
+        position: relative;
+        /*bottom: 14px;*/
+    }
+    #search-text {
+        margin: 0 12px 0 0;
+        width: 270px;
+    }
+}
+
+/* General */
 .header-subtitle {
     font-family: 'Patrick Hand', cursive;
 }
@@ -35,24 +110,8 @@
     padding: 0 1.6rem;
 }
 
-.options {
-    background-color: #F7F7F7;
-    border-bottom: 1px solid #dedfe0;
-    padding: .8rem
-}
-
-.options-container {
-    align-items: center;
+.buttons-container {
     display: flex;
-    max-width: 60rem;
-    margin: 0 auto;
-    min-height: 3rem;
-    padding: 0 1.6rem;
-}
-
-#search-text {
-    margin: 0 12px 0 0;
-    width: 270px;
 }
 
 .options-edit-container {
@@ -65,33 +124,6 @@
     max-width: 60rem;
     margin: 0 auto;
     padding: 0 1.6rem;
-}
-
-/* info text */
-.paragraph {
-    text-align: center;
-    padding-top: 33px;
-    font-size: xx-large;
-}
-
-/* Note */
-.note-edit-container {
-
-    padding: 25px 0 0 0;
-    display: grid;
-    justify-content: center;
-}
-
-.list-item {
-    text-decoration: none;
-    color: #333333;
-    background: #F7F7F7;
-    border: 1px solid #dedfe0;
-    margin: 1.6rem 0;
-    padding: 1.6rem;
-    display: block;
-    transition: background .3s ease;
-    position: relative; /**/
 }
 
 .list-note-title {
@@ -125,12 +157,6 @@
     margin: 20px;
 }
 
-.list-note-delete-btn {
-    position: absolute; /**/
-    bottom: 14px;
-    left: 822px;
-}
-
 .about-project {
     margin: 13px;
 }
@@ -138,3 +164,40 @@
 #about-link {
     color: darkcyan;
 }
+
+.header {
+    background: #7c977d;
+    color: white;
+    padding: 1.6rem 0;
+}
+
+.input-title {
+    border-color: whitesmoke;
+    margin-bottom: 10px;
+}
+.body-input {
+    border-color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    text-align: center;
+    padding-top: 33px;
+    font-size: xx-large;
+}
+
+.note-edit-container {
+    padding: 25px 15px 15px 15px;
+    display: grid;
+    justify-content: center;
+}
+#btn-save-note {
+    margin-bottom: 12px;
+}
+#btn-delete-note {
+    margin-bottom: 12px;
+}
+#btn-back {
+    margin-bottom: 12px;
+}
+

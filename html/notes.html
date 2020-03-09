@@ -40,11 +40,12 @@
     <div class="options">
         <div class="options-container">
             <input id="search-text" type="text" class="input" placeholder="Filter tasks">
-            <select name="" class="dropdown" id="option-filter">
+            <select class="custom-select" id="option-filter">
                 <option value="alphabetical">Sort alphabetically</option>
-                <!-- <option value="byEdited">Sort by last edited</option> -->
                 <option value="byCreated">Sort by recently created</option>
             </select>
+        </div>
+        <div class="buttons-container">
             <button id="create-note" class="btn btn-secondary" onclick="createNote()">Create note</button>
             <button id="clear-all-notes" class="btn btn-danger" onclick="clearAllNotes()">Clear all notes</button>
             <p class="about-project"><a id="about-link" href="">About</a></p>
@@ -57,7 +58,7 @@
     </div>
 
     <!-- footer -->
-    <footer id="footer" class="page-footer font-small pt-4 fixed-bottom">
+    <footer id="footer" class="page-footer font-small pt-4">
         <div class="footer-copyright text-center py-3">
             Made with <i class="fa fa-heart fa_custom"></i> - Carla Martínez Poveda <a href="https://github.com/carma12" class="icon" target="_blank" title="github"><i class="fa fa-github"></i> </a>
         </div>
@@ -66,7 +67,6 @@
     <!-- JS files -->
     <script type="text/javascript" src="../js/notes-functions.js"></script>
     <script type="text/javascript" src="../js/notes.js"></script>
-
 
 </body>
 </html>
