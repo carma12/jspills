@@ -8,6 +8,7 @@
 }
 .subtitle {
     padding-bottom: 61px;
+    padding-top: 20px;
 }
 .pills-main {
     height: 125px;
@@ -23,6 +24,13 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
+@media screen and (max-width: 390px) {
+    .content-heading {
+        width: 370px;
+        margin-left: 12px;
+    }
+}
+
 @media (min-width: 768px) {
     .container-small {
         width: 300px;
