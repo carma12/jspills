@@ -87,7 +87,8 @@ table.center {
     margin-right:auto;
 }
 .item-cell {
-    padding-right: 113px;
+    padding-right: 39px;
+    padding-left: 27px;
 }
 .tr-cell {
     height: 55px;
