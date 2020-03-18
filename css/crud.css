@@ -1,5 +1,5 @@
 /* Mobile */
-@media screen and (max-width: 390px) {
+@media (max-width: 420px) {
     .container1 {
         padding: 42px 35px;
     }
@@ -25,7 +25,7 @@
 }
 
 /* Tablets and Desktops*/
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .add-container {
         margin-top: 90px;
         display: flex;

@@ -24,7 +24,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
-@media screen and (max-width: 390px) {
+@media (max-width: 420px) {
     .content-heading {
         width: 370px;
         margin-left: 12px;
