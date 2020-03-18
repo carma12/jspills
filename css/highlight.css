@@ -1,47 +1,63 @@
-/*
-* Author: Carla Martínez Poveda
-* 2020
-*
-* */
+/* Mobile */
+@media (max-width: 390px) {
+    .display-1 {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 19.5vw;
+    }
+    #search {
+        margin-bottom: 10px;
+    }
+    .input-group-btn {
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablets and Desktops*/
+@media (min-width: 768px) {
+    #search {
+        width: 50%;
+        margin-right: 7px;
+    }
+    .form-group {
+        display: flex;
+    }
+    .form-check {
+        padding: 12px 38px;
+    }
+}
+
+/* General */
 .display-1 {
     padding: 38px 0 40px 0;
 }
-.form-inline {
-    padding: 12px 0 12px;
-}
-.form-check {
-    padding-left: 18px;
+.info-text {
+    color: rgba(81, 87, 93, 0.67);
 }
 .search-content {
     padding-top: 20px;
 }
 .subheader-text {
-    padding: 24px 0 7px 0;
-}
-.input-group-btn {
-    padding: 0 14px 0 4px;
+    padding: 24px 0 20px 0;
 }
 .catface {
     width: 15%;
     height: 15%;
 }
-/* highlight */
+
+/* Highlighting */
 .highlight1 {
     background-color: yellow;
 }
-
 .highlight2 {
     background-color: darkseagreen;
 }
-
 .highlight3 {
     background-color: lightpink;
 }
-
 .highlight4 {
     background-color: cadetblue;
 }
-
 .highlight5 {
     background-color: mediumpurple;
 }

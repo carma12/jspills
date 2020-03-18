@@ -26,23 +26,18 @@
 
     <h1 class="display-1 text-center">Highlighting a text</h1>
     <main role="main" class="container">
-        <div class="container-fluid">
-            <form class="form-inline">
-                <label class="sr-only" for="search">Search</label>
-                <div class="col-sm-11 my-1">
-                    <div class="input-group">
-                        <input id="search" type="text" class="form-control form-control-lg" placeholder="Highlight in text">
-                        <span class="input-group-btn">
-                            <button id="btn_search" class="btn btn-info btn-lg" type="button" onclick="highlight()">Search</button>
-                            <button id="btn_clear" class="btn btn-secondary btn-lg" type="button" onclick="clear_highlight()">Clear</button>
-
-                        </span>
-                        <div class="form-check">
-                            <label for="check_sensitive"></label><input type="checkbox" class="form-check-input" id="check_sensitive">
-                            <label class="form-check-label">Case-sensitive</label>
-                        </div> <!-- .form-check -->
-                    </div><!-- .input-group -->
-                </div><!-- .col-sm-8 .my-1 -->
+        <div class="container">
+            <p class="text-sm info-text">You can use a maximum of 5 words separated by spaces</p>
+            <form class="form-group">
+                   <input id="search" type="text" class="form-control form-control-lg" placeholder="Highlight in text">
+                   <div class="input-group-btn">
+                        <button id="btn_search" class="btn btn-info btn-lg" type="button" onclick="highlight()">Search</button>
+                        <button id="btn_clear" class="btn btn-secondary btn-lg" type="button" onclick="clear_highlight()">Clear</button>
+                   </div> <!-- .input-group-btn -->
+                   <div class="form-check">
+                        <label for="check_sensitive"></label><input type="checkbox" class="form-check-input" id="check_sensitive">
+                        <label class="form-check-label">Case-sensitive</label>
+                   </div> <!-- .form-check -->
             </form>
 
             <div id="search_content" class="search-content">
@@ -76,7 +71,7 @@
         </div><!-- #search_content.search-content -->
     </main>
     <!-- footer -->
-    <footer id="footer" class="page-footer font-small pt-4 fixed-bottom">
+    <footer id="footer" class="page-footer font-small pt-4">
         <div class="footer-copyright text-center py-3">
             Made with <i class="fa fa-heart fa_custom"></i> - Carla Martínez Poveda <a href="https://github.com/carma12" class="icon" target="_blank" title="github"><i class="fa fa-github"></i> </a>
         </div>
