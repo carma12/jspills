@@ -22,11 +22,7 @@ function buildContainer(elem, ghibliData) {
     }
 
     // Create a p and set the text content to every element (according to its type)
-    //c
-
-    let lines = [];
-
-    switch (ghibliData) {
+   switch (ghibliData) {
         case "films":
             const filmDescr = newParagraph("", elem.description);
             //elem.description = elem.description.substring(0, 300); // Limit to 300 chars

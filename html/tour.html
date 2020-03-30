@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A simple CRUD application">
+    <meta name="keywords" content="crud, application, shopping list, jspills, javascript, html, css, carma12">
+    <meta name="author" content="carma12">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_main/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_main/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_main/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon_main/site.webmanifest">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+
+    <!-- Bootstrap-->
+    <!-- <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Bootstrap Tour -->
+    <link rel="stylesheet" href="../lib/bootstrap-tour/build/css/bootstrap-tour-standalone.css"/>
+
+    <!-- CSS files-->
+    <link rel="stylesheet" type="text/css" href="../css/tour.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="screen"/>
+
+    <title>Tour application</title>
+</head>
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#tips">Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#pre-information">Coronavirus in Munich</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header id="header" class="mainheader">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="text-light mx-auto my-0 text-uppercase">When Coronavirus beats, quarantine is neat</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Tips to overcome confinement in a digital world</h2>
+                <button type="button" class="btn btn-light btn-lg" onclick="startTour()">Start the tour</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- about section -->
+    <section id="about" class="about-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4 text-uppercase">About</h2>
+                    <p class="text-white-50">This landing page acts as a recipient to test the
+                        <a href="http://bootstraptour.com/">Bootstrap Tour</a> library. The
+                        <a href="https://startbootstrap.com/themes/grayscale/">theme</a> is open source and it has been taken as base structure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="tips" class="tips-section bg-light">
+        <h2 class="tips-header text-black-50 mx-auto my-0 text-uppercase">These are our tips</h2>
+        <div class="container">
+
+            <!-- Featured Project Row -->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7">
+                    <img class="img-fluid mb-3 mb-lg-0" src="../images/tour_images/hello-i-m-nik-nLTynnJZ__Q-unsplash.jpg" alt="">
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Don't panic</h4>
+                        <p class="text-black-50 mb-0">
+                            Easy said than done, I know. Quarantine is not a desirable scenario, especially when there are situations out there that are beyond our control. But it's important to keep calm and trying to follow the security advices: wash your hands often, don't touch your face or mouth (specially when you are outside) and try to go to the grocery store when it's strictly necessary. For everything else, Amazon!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Zero Row -->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="../images/tour_images/kelly-sikkema--1_RZL8BGBM-unsplash.jpg" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4>Prioritize</h4>
+                                <p class="mb-0 text-black-50">
+                                    It's relatively easy to get distracted when working remotely ('The fridge is now full of food and chocolate!'). Making a list of all the To-Do tasks could be useful to notice in which ones you should focus first.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="../images/tour_images/greg-rakozy-vw3Ahg4x1tY-unsplash.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4>Learn something new</h4>
+                                <p class="mb-0 text-black-50">
+                                    It could be that book that you bought few months ago and didn't read because "you didn't have time to do so". Take this as an opportunity to be productive and explore new paths in your field of knowledge.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Two Row -->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="../images/tour_images/jesus-kiteque-wn-KYaHwcis-unsplash.jpg" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4>Take some breaks</h4>
+                                <p class="mb-0 text-black-50">
+                                    Make sure to take some short breaks between tasks. You can stretch your muscles, do some yoga, tidy up your desk, wash the dishes or pet your cat (it will be very happy with your love and affection <i class="fa fa-heart fa_custom"></i>).
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Three Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="../images/tour_images/ian-schneider-TamMbr4okv4-unsplash.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4>Remember why are you doing this</h4>
+                                <p class="mb-0 text-black-50">
+                                    For many people, being secluded at home could be a boring experience. Plus, working remotely is not for everyone. But try to stay positive and remember that health comes first. Also, your motivation plays an important role in this kind of situations. Which are the things you enjoy the most? Design, coding, testing, prototyping, learning, ... You name it.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- pre-information section -->
+    <section id="pre-information" class="pre-information-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <h2 class="text-white mb-5 text-uppercase">Coronavirus in Munich</h2>
+                    <h3 class="text-white-50 mb-5">Useful information</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- information section -->
+    <section id="information" class="information-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto my-lg-5 info-box">
+                    <h2 class="text-center info-title">City Support</h2>
+                    <div class="info-body">
+                        <p>The city has established a citizen hotline at <strong>089-233-44740</strong> that answers questions about the Coronavirus on weekends from 8 am to 8 pm.<br>
+                            For more information about emergency childcare you can go
+                            <a href="https://www.muenchen.de/rathaus/Stadtinfos/Presse-Service/Presse-Archiv/2020/Coronavirus-Schulschliessungen-Muenchen.html">here</a> (in German)</p>
+                        <p>Financial support for Munich companies:</p>
+                        <ul>
+                            <li><a href="mailto:wirtschaft.corona@muenchen.de">wirtschaft.corona@muenchen.de</a></li>
+                            <li>089-233-22070</li>
+                        </ul>
+
+                        <p>Volunteer Registration Office (Volunteer Helpers):</p>
+                        <ul>
+                            <li><a href="mailto:freiwillige.corona@muenchen.de">freiwillige.corona@muenchen.de</a></li>
+                            <li><a href="https://www.muenchner-freiwillige.de/helfen.html">www.muenchner-freiwillige.de/helfen.html</a></li>
+                        </ul>
+
+                        <p>Medical staff (doctors, nurses, medical students) who want to support the hospital can use the contact form at
+                            <a href="https://www.muenchen-klinik.de/freiwillige-helfer/">here</a>.</p>
+                        <p>The Bavarian State Office for Food Safety and Health (LGL) has also created a Coronavirus helpline at the number 09131-6808-5101.</p>
+                    </div>
+
+
+                    <h2 class="text-center info-title">What to do when you feel sick?</h2>
+                    <div class="info-body">
+                        <p>In
+                            <a href="https://www.muenchen.de/rathaus/dam/jcr:cc74ca5f-5864-4e5d-8aba-0937225dbafd/200309_Flussschema_Coronavirus_gesammelt-Presse%203.pdf">this PDF</a> you will find an action diagram that illustrates the necessary steps and decisions.</p>
+                        <p>There is more information provided by the
+                            <a href="https://www.muenchen-klinik.de/infektionen-immunsystem-immunkrankheit/coronavirus/">München-Klinik</a> on how to proceed in each case. In the current situation of influenza and coronavirus in Munich, they have decided to ban all visits by patients to their clinics with immediate effect.</p>
+                        <p>Exceptions will be made in consultation with medical and nursing staff, and will cover, for instance, minor patients, births or exceptional health situations.</p>
+
+                        <div class="sub-section">
+                            <h3 class="text-center inner-text">What if there is a suspicion of being infected?</h3>
+                            <p>Don't go to a clinic right away, not even Schwabing! They don't do outpatient tests there! The tests are carried out by the on-call medical service.</p>
+                            <p>Contact the on-call medical service by phone: <strong>116 117</strong></p>
+                        </div>
+                        <div class="sub-section">
+                            <h4 class="text-center inner-text">Outpatient testing at the LMU Tropical Institute</h4>
+                            <p>The Tropical Institute of the LMU Clinical Center performs Coronavirus tests on outpatients when the patients have been referred.</p>
+                            <p>The Institute asks patients who have been referred to the Tropical Institute with suspected new Coronavirus infection to contact the Institute BEFORE by phone at <strong>089 / 2180-13500</strong>. <a href="#information" id="addressLMUTI">Click here to see the full address.</a></p>
+                        </div>
+                    </div>
+
+                    <h2 id="exit-restrictions" class="text-center info-title">Exit restrictions</h2>
+                    <div class="info-body">
+                        <p>Regarding restrictions due to the Coronavirus in Munich, the measures will apply for two weeks from Saturday, March 21.</p>
+                        <p>You will not be allowed to leave your home unless:</p>
+                        <ul>
+                            <li>You need to go to work in a justified way.</li>
+                            <li>Doctor visits and use of medical services (blood donation is also allowed)</li>
+                            <li>Shopping and errands for daily necessities, (for example, grocery stores, beverages, pet supplies, pharmacies, drugstores, medical supply stores, opticians, banks and ATMs, post office, gas stations, auto repair shops, dry cleaners ...</li>
+                            <li>Visit your partner, the elderly, the sick or people with disabilities (outside the institutions)</li>
+                            <li>Accompany people in need of support and children.</li>
+                            <li>Accompanying the dying as well as funerals in the immediate family circle.</li>
+                            <li>Actions for the care of animals.</li>
+                            <li>It is allowed to go out and do sports in your free time. But alone or with the people you live with in the domestic community.</li>
+                        </ul>
+                        <p>Other restrictions:</p>
+                        <ul>
+                            <li>Physiotherapists now only work in emergencies.</li>
+                            <li>The right to visit hospitals (only for the dying, childbirths and hospitalized children), facilities for the disabled and homes for the elderly has been abolished.</li>
+                            <li>The food supply remains open.</li>
+                            <li>Banks remain open.</li>
+                            <li>Hairdressers must remain close.</li>
+                            <li>Public parks have already been closed in Germany since midweek.</li>
+                            <li>DIY stores and garden centers will be closed.</li>
+                            <li>Initially, gastronomy remains close (only sales to take away and deliveries).</li>
+                            <li>People should stay home, unless they have to go to work or do other errands.</li>
+                            <li>Large gatherings of people are prohibited.</li>
+                            <li>Social contacts should be kept to a minimum. Whenever possible, people should keep a minimum distance of 1.5 meters from each other.</li>
+                        </ul>
+                    </div>
+                    <p class="source-info text-right"><small>Source (in spanish): <a href="http://www.deibero.com/coronavirus-munich/?fbclid=IwAR2qzyUn3Hdxripo6MhOLjb-qynUcjJYJrbWrX3nXeSILlOs0oR1bUmLfk8">De Ibero</a></small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="page-footer font-small pt-4 fixed-right">
+        <div class="footer-copyright text-center py-3">
+            Made with <i class="fa fa-heart fa_custom"></i> - Carla Martínez Poveda <a href="https://github.com/carma12" class="icon" target="_blank" title="github"><i class="fa fa-github"></i> </a>
+        </div>
+    </footer>
+
+
+    <!-- JS LIBRARIES -->
+    <!-- jQuery -->
+    <script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Tour -->
+    <script src="../lib/bootstrap-tour/build/js/bootstrap-tour-standalone.js"></script>
+
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/42740aeff3.js" crossorigin="anonymous"></script>
+
+    <!-- Our JS files -->
+    <script type="text/javascript" src="../js/tour.js"></script>
+
+
+
+
+</body>
+</html>
